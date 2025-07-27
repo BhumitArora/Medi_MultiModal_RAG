@@ -7,7 +7,9 @@ You can find the different methods in the 3 notebooks.
 ### 1.Multimodal_RAG
 It is a Retrieval-Augmented Generation (RAG) pipeline that combines textual and visual modalities extracted from PDF documents. It generates multimodal embeddings, indexes them in a vector database, and uses them for context-aware question answering.
 
-<img width="1822" height="518" alt="Screenshot 2025-07-28 at 4 21 51 AM" src="https://github.com/user-attachments/assets/a4cc08eb-21f9-43aa-a8ad-cbd89cd976fa" />
+<img width="1822" height="518" alt="Screenshot 2025-07-28 at 4 39 52 AM" src="https://github.com/user-attachments/assets/8c345bdc-f2b4-40d6-9a01-f54bbdfbe737" />
+
+
 
 ---
 
