@@ -82,7 +82,7 @@ MULTIMODEL_USED: "vidore/colqwen2-v0.1"
    - Each embedding is indexed for later retrieval.
 
 4. **Vector DB Creation**  
-   - FAISS is used for indexing the embeddings.
+   - Qdrant is used for indexing the embeddings.
    - Metadata is attached to each chunk for later retrieval.
 
 5. **Querying via RAG**  
@@ -97,5 +97,16 @@ MULTIMODEL_USED: "vidore/colqwen2-v0.1"
 Install required packages using:
 
 ```bash
-pip install -r requirements_01.txt
+pip install -r requirements_02.txt
+```
+
+### 3.VLM_ColPali_RAG
+Same as ColQWEN_RAG. Just test out for different VLM.
+
+## 🛠️ Dependencies
+
+Install required packages using:
+
+```bash
+pip install -r requirements_03.txt
 ```
