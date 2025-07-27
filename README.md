@@ -48,3 +48,54 @@ Install required packages using:
 ```bash
 pip install -r requirements_01.txt
 ```
+
+------------------------
+
+
+### 2.VLM_ColQwen2_RAG
+VLM_ColQwen2_RAG is a multimodal retrieval-augmented generation (RAG) pipeline that uses the ColQwen2 vision-language model. It integrates image-based document processing (PDF-to-image), embedding-based retrieval, and answer generation. 
+
+
+<img width="828" height="526" alt="Screenshot 2025-07-28 at 4 54 39 AM" src="https://github.com/user-attachments/assets/48a81324-7127-452e-8063-5687a7176bec" />
+<img width="1460" height="829" alt="Screenshot 2025-07-28 at 4 55 39 AM" src="https://github.com/user-attachments/assets/4177f882-aa6b-468e-8c70-7718c2e894cf" />
+
+
+
+
+
+---
+
+## 🧠 Workflow Overview
+
+MULTIMODEL_USED: "vidore/colqwen2-v0.1"
+
+1. **PDF Data Loading**  
+   A case report or academic paper is downloaded and loaded locally.
+
+2. **Convert PDF to Images**  
+   - PDFs are converted into images using PyMuPDF.
+   - Each page becomes a separate image for inference.
+
+3. **Embedding Generation**  
+
+   - Images are passed through ColQwen2 to obtain embeddings.
+   - Each embedding is indexed for later retrieval.
+
+4. **Vector DB Creation**  
+   - FAISS is used for indexing the embeddings.
+   - Metadata is attached to each chunk for later retrieval.
+
+5. **Querying via RAG**  
+   - A user query is embedded.
+   - Top-k relevant chunks are retrieved using vector similarity.
+   - Retrieved context is used to generate a final response.
+
+---
+
+## 🛠️ Dependencies
+
+Install required packages using:
+
+```bash
+pip install -r requirements_01.txt
+```
