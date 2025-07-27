@@ -101,7 +101,7 @@ pip install -r requirements_02.txt
 ```
 
 ### 3.VLM_ColPali_RAG
-Same as ColQWEN_RAG. Just test out for different VLM.
+Same as ColQWEN_RAG. Just test out for different VLM and also more number of datasource pdf files.
 
 ## 🛠️ Dependencies
 
